@@ -6,12 +6,12 @@
 
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import App from './app/app';
+import Main from './app/main';
 
 class FirstApp extends Component {
   render() {
     return (
-      <App/>
+      <Main/>
     );
   }
 }

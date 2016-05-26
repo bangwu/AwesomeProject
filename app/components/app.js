@@ -16,22 +16,15 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.increase} onPress={ this.handleIncrease }>
+        <Text>{ this.props.counter }</Text>
+        <Text style={styles.increase} onPress={ this.props.handleIncrease }>
           increase
         </Text>
-        <Text style={styles.decrease} onPress={ this.handleDecrease }>
+        <Text style={styles.decrease} onPress={ this.props.handleDecrease }>
           decrease
         </Text>
       </View>
     );
-  }
-
-  handleIncrease = () => {
-    console.log('increase');
-  }
-
-  handleDecrease = () => {
-    console.log('decrease');
   }
 }
 
