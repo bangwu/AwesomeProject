@@ -1,4 +1,6 @@
 import ActionTypes from './actiontypes';
+import {Actions} from 'react-native-router-flux'
+
 const increaseAction = function(){
 	return {
 		type: ActionTypes.INCREASE
@@ -11,7 +13,15 @@ const decreaseAction = function(){
 	}
 }
 
+const loginAction = function(){
+	Actions.main();
+	return {
+		type: ActionTypes.LOGIN
+	}
+}
+
 export default {
 	increaseAction: increaseAction,
-	decreaseAction: decreaseAction
+	decreaseAction: decreaseAction,
+	loginAction: loginAction
 }

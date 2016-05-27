@@ -3,7 +3,7 @@ import App from '../components/app';
 import Actions from '../constants/actions';
 
 const mapStateToProps = function(state, ownProps){
-  return { counter: state.counter };
+  return { counter: state.counter, token: state.token };
 }
 
 const mapDispatchToProps = function(dispatch, ownProps){

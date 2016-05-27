@@ -16,6 +16,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Text>token: { this.props.token }</Text>
         <Text>{ this.props.counter }</Text>
         <Text style={styles.increase} onPress={ this.props.handleIncrease }>
           increase

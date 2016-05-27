@@ -1,4 +1,5 @@
 export default {
 	INCREASE: 'INCREASE',
-	DECREASE: 'DECREASE'
+	DECREASE: 'DECREASE',
+	LOGIN: 'LOGIN'
 }
